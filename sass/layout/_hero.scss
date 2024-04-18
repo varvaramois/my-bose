@@ -1,0 +1,101 @@
+.hero {
+  padding: 32px 0 52px;
+  @media screen and (min-width: 768px) {
+    padding: 50px 0 100px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 70px 0 170px;
+  }
+}
+.hero__container {
+  @media screen and (min-width: 768px) {
+    padding-right: 0;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-left: 80px;
+  }
+}
+.hero__left-side {
+  @media screen and (min-width: 768px) {
+    max-width: 294px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 50%;
+  }
+}
+.hero__text {
+  font-size: 14px;
+  line-height: 1.25;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+}
+.hero__text:first-child {
+  margin-bottom: 16px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 36px;
+  }
+}
+.hero__wrapper-title {
+  @media screen and (min-width: 1440px) {
+    position: relative;
+    left: 110px;
+    min-width: 760px;
+  }
+}
+.hero__title {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $add-text-color;
+  margin: 32px 0;
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    margin-top: 105px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 74px;
+    margin-top: 94px;
+    margin-bottom: 86px;
+  }
+}
+.hero__btn {
+  padding: 19px 0;
+  margin-bottom: 32px;
+  min-width: 100%;
+  border: 1px solid transparent;
+  background-color: $accent;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  transition: background-color 250ms ease-in-out, border 250ms ease-in-out, color 250ms ease-in-out, border 250ms ease-in-out;
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 1px solid $accent;
+    color: $accent;
+    cursor: pointer;
+  }
+  @media screen and (min-width: 1440px) {
+    min-width: 400px;
+    padding: 22px 172px;
+  }
+}
+.hero__img {
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 700px;
+  }
+}
